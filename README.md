@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# ⚡ AlgoViz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Visualize C++ Algorithms Like Never Before.**
 
-Currently, two official plugins are available:
+[![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge&logo=netlify)](https://cppalgoviz.netlify.app/)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**AlgoViz** is an interactive, real-time algorithm visualizer designed to help students and developers master **Sorting** and **Searching** concepts. Watch code execute step-by-step, control the speed, and switch between themes to suit your vibe.
 
-## React Compiler
+### 🔴 [**View Live Project**](https://cppalgoviz.netlify.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![AlgoViz Screenshot](./public/screenshot.jpg)
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🌓 Theme Support
+* **Dark & Light Mode:** Whether you prefer a sleek dark interface for late-night coding or a bright, crisp look for presentations, switch modes instantly with a single click.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 📊 Sorting Algorithms
+Visualize how data moves and swaps with precision:
+* **Bubble Sort:** Watch the largest elements "bubble" to the top.
+* **Selection Sort:** See how the smallest element is selected in each pass.
+* **Insertion Sort:** Understand how cards are sorted in a hand.
+* **Merge Sort:** Visualize the divide-and-conquer strategy in action.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🔍 Searching Algorithms
+* **Linear Search:** Iterate through data one by one.
+* **Binary Search:** Visualize the power of dividing the search space.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🎛️ Interactive Controls
+* **Speed Control:** Slow down to understand, speed up to scan.
+* **Custom Inputs:** Test edge cases with your own datasets.
+* **Step-by-Step Execution:** Pause, play, and step through the logic.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 📬 Get in Touch
+
+**Jishantu Kripal Bordoloi** ( [links.jishantukripal.com](https://links.jishantukripal.com) )
+
+---
+
+### ⚠️ Note
+> This project is **created by vibe coding**. 🎧✨
+> There are scope for improvements, and exciting new features are coming soon! Stay tuned.
