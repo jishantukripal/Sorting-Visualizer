@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Tiro+Bangla:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light Mode Variables */
+  --color-background: 248 250 252; /* slate-50 */
+  --color-surface: 255 255 255;    /* white */
+  --color-primary: 59 130 246;     /* blue-500 */
+  --color-secondary: 100 116 139;  /* slate-500 */
+  --color-accent: 139 92 246;      /* violet-500 */
+  --text-main: 15 23 42;           /* slate-900 */
+  --border-color: 226 232 240;     /* slate-200 */
+}
+
+.dark {
+  /* Dark Mode Variables */
+  --color-background: 15 23 42;    /* slate-900 */
+  --color-surface: 30 41 59;       /* slate-800 */
+  --color-primary: 59 130 246;     /* blue-500 */
+  --color-secondary: 148 163 184;  /* slate-400 */
+  --color-accent: 139 92 246;      /* violet-500 */
+  --text-main: 248 250 252;        /* slate-50 */
+  --border-color: 51 65 85;        /* slate-700 */
+}
+
+body {
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--text-main));
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-secondary)); 
+  border-radius: 4px;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--color-primary)); 
+}
